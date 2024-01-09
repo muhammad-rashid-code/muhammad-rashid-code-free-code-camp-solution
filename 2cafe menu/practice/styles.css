@@ -27,16 +27,16 @@ p {
 .menu {
     width: 80%;
     background-color: burlywood;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     padding: 20px;
     max-width: 500px;
 }
 
 img {
     display: block;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     margin-top: -25px;
 }
 
@@ -44,6 +44,7 @@ hr {
     height: 2px;
     background-color: brown;
     border-color: brown;
+
 }
 
 .bottom-line {
@@ -74,13 +75,12 @@ h2 {
 }
 
 /* FOOTER */
-
 footer {
-    font-size: 14px;
+    font-size: 14px
 }
 
 .address {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 a {
