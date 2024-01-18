@@ -3,84 +3,67 @@
   <head>
     <meta http-equiv="refresh" content="2" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <h1>Registration Form</h1>
     <p>Please fill out this form with the required information</p>
-    <form method="get">
+    <form method="post" action="https://register-demo.freecodecamp.org">
       <fieldset>
-        <label for="first-name">
-          Enter Your First Name:
-          <input type="text" name="first-name" id="first-name" required
+        <label for="first-name"
+          >Enter Your First Name:
+          <input id="first-name" name="first-name" type="text" required
         /></label>
         <label for="last-name"
           >Enter Your Last Name:
-          <input type="text" name="first-name" id="first-name" required
+          <input id="last-name" name="last-name" type="text" required
         /></label>
-        <label for="email">
-          Enter Your Email:
-          <input type="email" name="email" id="email" required
+        <label for="email"
+          >Enter Your Email:
+          <input id="email" name="email" type="email" required
         /></label>
-        <label for="password"
+        <label for="new-password"
           >Create a New Password:
-          <input type="password" name="password" id="password" required
+          <input
+            id="new-password"
+            name="new-password"
+            type="password"
+            pattern="[a-z0-5]{8,}"
+            required
         /></label>
       </fieldset>
       <fieldset>
         <legend>Account type (required)</legend>
-        <label for="Personal">
-          <input
+        <label for="personal-account"
+          ><input
+            id="personal-account"
             type="radio"
             name="account-type"
-            id="Personal"
-            required
+            class="inline"
             checked
           />
           Personal</label
         >
-        <label for="business-account">
-          <input type="radio" name="account-type" id="business-account" />
+        <label for="business-account"
+          ><input
+            id="business-account"
+            type="radio"
+            name="account-type"
+            class="inline"
+          />
           Business</label
         >
       </fieldset>
       <fieldset>
         <label for="profile-picture"
           >Upload a profile picture:
-          <input
-            type="file"
-            name="profile-picture"
-            id="profile-picture"
-            required
+          <input id="profile-picture" type="file" name="file"
         /></label>
         <label for="age"
           >Input your age (years):
-          <input type="number" name="age" id="age" required min="13" max="120"
+          <input id="age" type="number" name="age" min="13" max="120"
         /></label>
-
-        <!-- <label for="referrer"
-          >How did you hear about us?
-          <section id="referrer" name="referrer">
-            <option value="">(select one)</option>
-            <option value="1">freeCodeCamp News</option>
-            <option value="2">freeCodeCamp YouTube Channel</option>
-            <option value="3">freeCodeCamp Forum</option>
-            <option value="4">Other</option>
-          </section></label
-        > -->
-
-        <!-- <label for=""
-          ><select name="" id="">
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
-          </select></label
-        > -->
-
         <label for="referrer"
           >How did you hear about us?
           <select id="referrer" name="referrer">
@@ -91,14 +74,13 @@
             <option value="4">Other</option>
           </select>
         </label>
-        <label for="bio">
-          Provide a bio:
+        <label for="bio"
+          >Provide a bio:
           <textarea
-            name="bio"
             id="bio"
-            cols="30"
+            name="bio"
             rows="3"
-            required
+            cols="30"
             placeholder="I like coding on the beach..."
           ></textarea>
         </label>
@@ -120,3 +102,4 @@
     </form>
   </body>
 </html>
+ 
