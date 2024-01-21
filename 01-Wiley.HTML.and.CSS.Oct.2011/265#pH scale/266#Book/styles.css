@@ -59,3 +59,8 @@ p.thirteen {
 p.fourteen {
   background-color: rgb(0, 136, 221);
 }
+
+p {
+  padding: 33px;
+  text-align: center;
+}
