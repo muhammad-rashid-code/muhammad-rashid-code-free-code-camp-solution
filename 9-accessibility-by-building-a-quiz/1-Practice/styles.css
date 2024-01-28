@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f5f6f7;
+  background: #f5f6f7;
   color: #1b1b32;
   font-family: Helvetica;
   margin: 0;
@@ -47,12 +47,14 @@ nav > ul {
   flex-wrap: wrap;
   align-items: center;
   padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
 }
 
 nav > ul > li {
-  color: #efefd2;
+  color: #dfdfe2;
   margin: 0 0.2rem;
-  padding: 0rem;
+  padding: 0.2rem;
   display: block;
 }
 
@@ -74,6 +76,7 @@ main {
 section {
   width: 80%;
   margin: 0 auto 10px auto;
+  max-width: 600px;
 }
 
 h1,
@@ -93,7 +96,7 @@ h2 {
 
 .formrow {
   margin-top: 30px;
-  padding: 0 15px;
+  padding: 0px 15px;
 }
 
 input {
@@ -130,7 +133,7 @@ p {
   font-size: 20px;
 }
 
-P::before {
+p::before {
   content: "Question #";
 }
 
@@ -141,7 +144,7 @@ P::before {
 
 .answers-list {
   list-style: none;
-  padding: 0px;
+  padding: 0;
 }
 
 button {
@@ -150,7 +153,7 @@ button {
   width: 40%;
   padding: 15px;
   font-size: 23px;
-  background-color: #d0d0d5;
+  background: #d0d0d5;
   border: 3px solid #3b3b4f;
 }
 
@@ -174,7 +177,7 @@ address {
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0px;
+  padding: 0;
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
