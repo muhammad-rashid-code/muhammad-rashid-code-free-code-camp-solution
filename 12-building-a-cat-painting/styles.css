@@ -30,7 +30,7 @@ body {
   transform: rotate(-45deg);
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
-  border-bottom: 70px solid #5e5e5e;
+  border-bottom: 70px solid #5e5e5e; 
 }
 
 .cat-right-ear {
